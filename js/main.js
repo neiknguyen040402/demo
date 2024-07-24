@@ -99,7 +99,7 @@ $('#yes').click(function() {
     var audio = new Audio('sound/tick.mp3');
     audio.play();
     Swal.fire({
-        title: CONFIG.question,
+        title: `<span class="custom-title">${CONFIG.question}</span>`,
         html: true,
         width: 900,
         padding: '3em',
